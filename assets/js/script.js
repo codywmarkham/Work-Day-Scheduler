@@ -1,7 +1,11 @@
-var now = moment();
-    var currentDay = moment().format('dddd MMM Do YY');
-    console.log(currentDay);
-    $("#currentDay").text(currentDay);
-     
-    console.log(now.toString());
+let now = moment();
+
+$("#Work Day Scheduler").attr("min", now.add(1, 'd').format('YYYY-MM-DD'));
+
+const currentTimeInterval = setInterval(function () {
+  now = moment();
+  $("#now").text(`${now.format('MMM DD, YYYY')} at ${now.format('HH:mm:ss')}`);
+}, 1000);
+
+
 
