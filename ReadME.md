@@ -1,4 +1,4 @@
-Cody's WOrk-Day-Scheduler
+Cody's Work-Day-Scheduler
 
 
 
