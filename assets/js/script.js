@@ -2,7 +2,7 @@ let todaysDate = document.querySelector("#todaysDate");
 const saveBtn = document.querySelectorAll(".saveBtn");
 
 let now = moment();
-
+// getting the date
 todaysDate = now.format("dddd, MMMM Do");
 
 
@@ -20,7 +20,7 @@ console.log(currentHour)
 
         let dataId = ($(inputs[i]).siblings("row").attr("id"));
         console.log(dataId);
-
+        // trying to change color
         if(dataId < currentHour){
             $("row").addClass("past");
         } else if (dataId === currentHour){
@@ -30,7 +30,7 @@ console.log(currentHour)
         }
     }
 
-
+// saving page info
 function saveText () {
 
     if (inputs !== ""){
